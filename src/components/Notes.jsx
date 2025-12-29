@@ -13,8 +13,8 @@ const Notes = () => {
     return searchWords.every((word) => noteText.includes(word));
   });
   return (
-    <div className='flex flex-col px-10 pt-10 pb-5 gap-8 w-[80%] h-screen'>
-        <input className='border-2 rounded-2xl bg-gray-200 border-gray-200 px-2.5 py-1 w-60 h-8' value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} type="search" name="" id="" placeholder='Search...' />
+    <div className='flex flex-col px-4 xl:px-10 lg:px-10 md:px-10 sm:px-10  pt-10 pb-5 gap-8 w-[100%] h-screen'>
+        <input className='border-2 rounded-2xl bg-gray-200 border-gray-200 px-2.5 py-1 w-40 xl:w-60 lg:w-60 md:w-60 sm:w-60 h-8' value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} type="search" name="" id="" placeholder='Search...' />
       <h1 className='text-3xl font-bold'>Notes</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5 overflow-y-scroll'>
         {filteredNotes.map((note) => (

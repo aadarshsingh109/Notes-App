@@ -9,8 +9,8 @@ const Navbar = () => {
   }
   const{colors,setSelectedColor, addNote}= useContext(ColorContext)
   return (
-    <div className="h-screen w-[11%] border-r border-gray-300 flex flex-col items-center gap-6 overflow-hidden">
-      <h1 className='pt-10 text-3xl font-bold'>To-Do</h1>
+    <div className="h-screen w-[30%] xl:w-[11%] lg:w-[11%] md:w-[15%] sm:w-[20%]  border-r border-gray-300 flex flex-col items-center gap-6 overflow-hidden">
+      <h1 className='pt-10 text-2xl font-bold'>To-Do</h1>
       <Button txtclr = {"text-white"}
         bgclr = {"bg-black"}
         fade = {false}

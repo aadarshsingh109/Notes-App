@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Notes from './components/Notes.jsx'
-import { ColorProvider } from './context/colorContext.jsx'
+import { ColorProvider } from './context/ColorContext.jsx'
 import './App.css'
 
 function App() {
@@ -11,9 +11,12 @@ function App() {
     <>
     
     <ColorProvider>
-      <div className='flex w-screen overflow-hidden'>
+      <div className='flex min-h-screen'>
         <Navbar></Navbar>
-        <Notes></Notes>
+        <main className="flex-1 min-w-0">
+          <Notes></Notes>
+        </main>
+        
       </div>
     </ColorProvider>
     
