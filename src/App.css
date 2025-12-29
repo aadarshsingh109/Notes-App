@@ -1,0 +1,30 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* This targets the 'track' (the background of the scrollbar) */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Makes the track invisible */
+}
+
+/* This targets the 'thumb' (the draggable part) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1); /* Subtle dark color */
+  border-radius: 20px; /* Makes it rounded */
+  border: 2px solid transparent; /* Acts as padding around the thumb */
+  background-clip: content-box; /* Ensures the border stays transparent */
+}
+
+/* Optional: Change color on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
