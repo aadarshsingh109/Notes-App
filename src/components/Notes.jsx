@@ -1,6 +1,6 @@
 import React, { useContext, useState} from 'react'
 import Box from './Box.jsx'
-import { ColorContext } from '../context/colorContext.jsx'
+import { ColorContext } from '../context/ColorContext.jsx'
 const Notes = () => {
     const { notes } = useContext(ColorContext)
     const [searchQuery, setSearchQuery] = useState("");

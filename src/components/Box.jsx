@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import Button from './Button'
 import { FaEye } from "react-icons/fa";
 import { HiPencil } from "react-icons/hi2";
-import { ColorContext } from '../context/colorContext';
+import { ColorContext } from '../context/ColorContext';
 import { RiDeleteBin7Fill } from "react-icons/ri";
 
 const Box = ({noteData}) => {

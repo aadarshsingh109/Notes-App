@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import '../App.css'
 import Button from './Button'
-import { ColorContext } from '../context/colorContext'
+import { ColorContext } from '../context/ColorContext'
 const Navbar = () => {
   const[color,openColor] = useState(false)
   function color1(){
